@@ -23,7 +23,7 @@ camera.position.set(4,3,8);
 const renderer = new THREE.WebGLRenderer({ antialias:true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
 document.body.appendChild(renderer.domElement);
 
 // Floor
@@ -62,7 +62,7 @@ scene.add(torus);
 
 // Left light
 const leftLight = new THREE.DirectionalLight(0xffffff, 1);
-leftLight.position.set(0, 5, 2); // left, above
+leftLight.position.set(-4, 5, -5); // left, above
 leftLight.target.position.set(0,0,0);
 leftLight.castShadow = true;
 
