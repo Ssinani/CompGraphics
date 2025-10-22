@@ -25,7 +25,7 @@ const mesh = new THREE.Mesh(
 scene.add(mesh)
 
 // === Camera ===
-// Orthographic (you can swap for Perspective if you want)
+// Orthographic 
 const aspectRatio = sizes.width / sizes.height
 const camera = new THREE.OrthographicCamera(
     -aspectRatio, // left
