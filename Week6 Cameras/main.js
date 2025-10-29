@@ -16,7 +16,7 @@ const sizes = {
 // === Scene ===
 const scene = new THREE.Scene()
 scene.background = new THREE.Color(0x000000) // pure black
-0x000000
+
 // === Object ===
 const mesh = new THREE.Mesh(
     new THREE.BoxGeometry(1, 1, 1, 5, 5, 5),
