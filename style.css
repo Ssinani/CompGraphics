@@ -1,0 +1,45 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #0b0d12; font-family: system-ui, Segoe UI, Arial; }
+canvas { display: block; }
+
+#hud {
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  gap: 12px; text-align: center;
+  padding: 24px;
+  color: #f1f1ff;
+  background: radial-gradient(ellipse at center, rgba(30,28,26,0.85), rgba(10,12,18,0.95));
+}
+#hud h1 { margin: 0; font-size: 34px; letter-spacing: 0.5px; }
+#hud p { margin: 0; max-width: 760px; opacity: 0.9; line-height: 1.4; }
+
+#enter {
+  border: none; cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: #c58f4a;
+  color: #20180f;
+  font-weight: 800;
+}
+#enter:hover { filter: brightness(1.05); }
+
+#crosshair {
+  position: absolute; top: 50%; left: 50%;
+  translate: -50% -50%;
+  color: rgba(255,255,255,0.7);
+  font-size: 18px;
+  pointer-events: none; user-select: none;
+}
+
+#panel {
+  position: absolute; left: 16px; bottom: 16px;
+  background: rgba(16, 16, 18, 0.75);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 12px 14px;
+  border-radius: 14px;
+  color: #f4f1ea;
+  backdrop-filter: blur(8px);
+  min-width: 220px;
+}
+#panelTitle { font-weight: 900; margin-bottom: 6px; }
+#panel .hint { font-size: 13px; opacity: 0.8; }
+.hidden { display: none; }
